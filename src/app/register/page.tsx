@@ -8,9 +8,8 @@ export default function RegisterPage() {
     const router = useRouter();
 
     const handleRegister = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Placeholder for register logic
-        router.push("/feed");
+        e.preventDefault(); // Prevent default form submission behavior
+        router.push("/feed"); // Redirect to the feed page
     };
 
     return (

@@ -8,9 +8,8 @@ export default function LoginPage() {
     const router = useRouter();
 
     const handleLogin = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Placeholder for login logic
-        router.push("/feed");
+        e.preventDefault(); // Prevent default form submission behavior
+        router.push("/feed"); // Redirect to the feed page
     };
 
     return (
